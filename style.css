@@ -1,0 +1,56 @@
+:root {
+    --btn-color: rgb(242, 204, 132);
+    --btn-hover:    rgb(249, 234, 140);
+    --digit-color: rgb(88, 88, 88);
+}
+
+.calculator, button, .screen {
+    border-radius: 5px;
+    border: 2px solid brown;
+}
+
+.calculator {
+    margin: auto;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.screen {
+    height: 60px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    background-color: var(--btn-color);
+    color: var(--digit-color);
+    overflow-wrap: break-word;
+    overflow: auto;
+    align-content: center;
+}
+
+.buttons-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: blue;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.button-line {
+    display: flex;
+    gap: 5px
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+}
+
+button:active {
+    background-color: orange;
+}
