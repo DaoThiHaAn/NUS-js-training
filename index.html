@@ -12,32 +12,35 @@
             </div>
 
             <div class="buttons-section">
-                <button class="clear" onclick="clearScreen()">Clear</button>
+                <div class="clear-button-line">
+                    <button class="clear" onclick="clearScreen()">Clear</button>
+                    <button class="backspace" onclick="backSpace()"> <-- </button>
+                </div>
 
                 <div class="button-line">
                     <button class="digit" data-digit="7">7</button>
                     <button class="digit" data-digit="8">8</button>
                     <button class="digit" data-digit="9">9</button>
-                    <button class="digit" data-digit="/">/</button>
+                    <button class="digit op" data-digit="/">/</button>
                 </div>
                 
                 <div class="button-line">
                     <button class="digit" data-digit="4">4</button>
                     <button class="digit" data-digit="5">5</button>
                     <button class="digit" data-digit="6">6</button>
-                    <button class="digit" data-digit="*">*</button>
+                    <button class="digit op" data-digit="*">*</button>
                 </div>
                 <div class="button-line">
                     <button class="digit" data-digit="1">1</button>
                     <button class="digit" data-digit="2">2</button>
                     <button class="digit" data-digit="3">3</button>
-                    <button class="digit" data-digit="-">-</button>
+                    <button class="digit op" data-digit="-">-</button>
                 </div>
                 <div class="button-line">
                     <button class="digit" data-digit="0">0</button>
-                    <button class="digit" data-digit=".">.</button>
-                    <button class="eq-op">=</button>
-                    <button class="digit" data-digit="+">+</button>
+                    <button class="digit op" data-digit=".">.</button>
+                    <button class="eq-op" onclick="calc()">=</button>
+                    <button class="digit op" data-digit="+">+</button>
                 </div>
             </div>
         </div>
